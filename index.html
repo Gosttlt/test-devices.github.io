@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body style="overflow: hidden">
+  <body>
     <div style="height: 2000px">123</div>
+    <button id="but">321</button>
+    321
   </body>
+  <script>
+    const but = document.querySelector("#but");
+    const body = document.querySelector("body");
+    but.addEventListener("click", () => {
+      body.style.overflow = "hidden";
+    });
+  </script>
 </html>
